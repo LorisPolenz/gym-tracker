@@ -1,0 +1,8 @@
+version: '3.9'
+services:
+  data-fetcher:
+    build: .
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./gym-data:/app/gym-data
