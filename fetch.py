@@ -35,7 +35,7 @@ writeCSV(csvHeader)
 while True:
     csvRow = []
 
-    timestamp = pd.Timestamp.now()
+    timestamp = pd.Timestamp.now(tz='Europe/Zurich')
 
     minute = "0%d" % timestamp.round("5T").minute
     hour = "0%d" % timestamp.hour
